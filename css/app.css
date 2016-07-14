@@ -13,7 +13,7 @@ body{
     background-color:#B8460F;
     margin: 20px;
       animation-name: blinky;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 .box{
@@ -23,26 +23,40 @@ body{
     background-color: #B8460F;
     margin: 20px;
     animation-name: blinky;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+
+
+ .1{
+    margin-left: 
+}
+
+
+/*animation*/
+
 @keyframes blinky{
     0%{opacity: 1;
-        margin-left: 0%;
-        padding-right: 10%;
+      
+        
     }
+    /*
     25%{
         opacity: 0.5;
         margin-left: 25%;
     }
+    */
     50%{opacity: 0;
-    margin-left:50%;
+    
     }
+    /*
     75%{
         opacity: 0.5;
         margin-left: 75%
     }
+    */
     100%{opacity: 1;
-        margin-left: 50%;
+       
     }
 }
+
