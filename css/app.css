@@ -1,0 +1,23 @@
+body{
+    background-image: url(../img/back.jpg); 
+        background-repeat:no-repeat;
+        background-size: cover;
+    position: fixed;
+    height: 600px;
+    width: 100%;
+}
+.circles{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #B71212;
+    margin: 20px;
+    
+}
+.box{
+     height: 50px;
+    width: 50px;
+
+    background-color: #B71212;
+    margin: 20px;
+}
