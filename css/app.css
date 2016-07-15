@@ -106,6 +106,6 @@ div:nth-of-type(17) { animation: wave 17s -10.045s linear infinite; }
 }
 /*audio*/
 audio{
-    margin-top: 50px;
-    margin-bottom: -50px;
+    margin-top: 10px;
+    margin-bottom: -100px;
 }
