@@ -8,12 +8,14 @@ body{
 }
 /*h1*/
 
-h1{
-    font-size: 75px;
+#top{
+    font-size: 90px;
     text-align: center;
     font-family: sans-serif;
     text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
     color: maroon;
+    
+    
 }
 #jumpy1{
     animation-name: jumpy;
@@ -36,7 +38,7 @@ h1{
   52.999% { opacity: 0.7; } /* Turn back on */
   53% { opacity: 1; }
 }
-
+/*
 .circles{
     height: 50px;
     width: 50px;
@@ -61,10 +63,7 @@ h1{
 }
 
 
- .1{
-    margin-left: 
-}
-
+ .
 
 /*animation*/
 
@@ -92,4 +91,56 @@ h1{
        
     }
 }
+*/
+/*spann*/
+#bottom {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  
+}
+div{
+  margin-top: -17%;
+  height: 34%; 
+  width: 2%;
+  top: 30%;
+  border-radius: 20px;
+  position: absolute;
+}
+div:nth-of-type(1)  { animation: wave 17s   0.000s linear infinite; }
+div:nth-of-type(2)  { animation: wave 17s -16.227s linear infinite; }
+div:nth-of-type(3)  { animation: wave 17s -15.455s linear infinite; }
+div:nth-of-type(4)  { animation: wave 17s -14.682s linear infinite; }
+div:nth-of-type(5)  { animation: wave 17s -13.909s linear infinite; }
+div:nth-of-type(6)  { animation: wave 17s -13.136s linear infinite; }
+div:nth-of-type(7)  { animation: wave 17s -12.364s linear infinite; }
+div:nth-of-type(8)  { animation: wave 17s -11.591s linear infinite; }
+div:nth-of-type(9)  { animation: wave 17s -10.818s linear infinite; }
+div:nth-of-type(10) { animation: wave 17s -10.045s linear infinite; }
 
+
+@keyframes wave {
+  0%   { left:-2%; background: #3B44D1; }
+  5%   { background: #9337FE; }
+  10%  { height:10%; margin-top: -5%; background: #C532FC; }
+  15%  { background: #F639F8; }
+  20%  { height:34%; margin-top:-17%; background: #F236C8; }
+  25%  { background: #FF2F8D; }
+  30%  { height:10%; margin-top: -5%; background: #EE3860; }
+  35%  { background: #DC5245; }
+  40%  { height:34%; margin-top:-17%; background: #F38643; }
+  45%  { background: #F8B435; }
+  50%  { height:10%; margin-top: -5%; background: #FAF444; }
+  55%  { background: #E0FF3B; }
+  60%  { height:34%; margin-top:-17%; background: #E1FF3C; }
+  65%  { background: #46F443; }
+  70%  { height:10%; margin-top: -5%; background: #54E67B; }
+  75%  { background: #4DF3A9; }
+  80%  { height:34%; margin-top:-17%; background: #3AF9DA; }
+  85%  { background: #36EBF4; }
+  90%  { height:10%; margin-top: -5%; background: #3DB3F3; }
+  95%  { background: #3C82F1; }
+  100% { height:34%; margin-top:-17%; left:100%; background: #5B38EE; }
+}
