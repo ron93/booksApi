@@ -39,60 +39,11 @@ body{
   52.999% { opacity: 0.7; } /* Turn back on */
   53% { opacity: 1; }
 }
-/*
-.circles{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color:#B8460F;
-    margin: 20px;
-      animation-name: blinky;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-.box{
-     height: 50px;
-    width: 50px;
-
-    background-color: #B8460F;
-    margin: 20px;
-    animation-name: blinky;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    -webkit-animation-delay:2s;
-    animation-delay: 2s;
-}
 
 
- .
 
-/*animation*/
 
-@keyframes blinky{
-    0%{opacity: 1;
-      
-        
-    }
-  
-    25%{
-        opacity: 0.5;
-        margin-left: 25%;
-    }
-   
-    50%{opacity: 0;
-    
-    }
- 
-    75%{
-        opacity: 0.5;
-        margin-left: 75%
-    }
-   
-    100%{opacity: 1;
-       
-    }
-}
-*/
+
 /*spann*/
 #bottom {
   position: relative;
@@ -156,4 +107,5 @@ div:nth-of-type(17) { animation: wave 17s -10.045s linear infinite; }
 /*audio*/
 audio{
     margin-top: 50px;
+    margin-bottom: -50px;
 }
