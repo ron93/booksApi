@@ -1,5 +1,4 @@
 # Book REST API 
-`commands.yml`.
 
 ## Install
 
@@ -15,7 +14,7 @@
 
 # REST API
 
-The REST API to the example app is described below.
+The REST API to the Books app is described below.
 
 ## Get list of Books
 
@@ -158,7 +157,7 @@ The REST API to the example app is described below.
 
 `GET /books/id`
 
-    curl -i -H 'Accept: application/json' http://localhost:7000/thing/1
+    curl -i -H 'Accept: application/json' http://localhost:5001/books/1/
 
 ### Response
 
@@ -179,7 +178,7 @@ The REST API to the example app is described below.
 
 `DELETE /books/id`
 
-    curl -i -H 'Accept: application/json' -X DELETE http://localhost:7000/thing/1/
+    curl -i -H 'Accept: application/json' -X DELETE http://localhost:5001/books/1/
 
 ### Response
 
@@ -195,7 +194,7 @@ The REST API to the example app is described below.
 
 `DELETE /books/id`
 
-    curl -i -H 'Accept: application/json' -X DELETE http://localhost:7000/thing/1/
+    curl -i -H 'Accept: application/json' -X DELETE http://localhost:5001/books/1/
 
 ### Response
 
@@ -214,7 +213,7 @@ The REST API to the example app is described below.
 
 `GET /books/1`
 
-    curl -i -H 'Accept: application/json' http://localhost:7000/thing/1
+    curl -i -H 'Accept: application/json' http://localhost:5001/books/1
 
 ### Response
 
