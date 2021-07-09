@@ -3,6 +3,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using book_api.Models;
+using BookApi.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace book_api.Repositories
