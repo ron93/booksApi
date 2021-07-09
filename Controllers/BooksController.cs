@@ -33,5 +33,14 @@ namespace book_api.Controllers
             return await _bookRepository.Get(id);
 
         }
+
+        [HttpPost]
+        public async Task<ActionResult<Book>>PostBooks([FromBody] Book book)
+        {
+            var newBook = await _bookRepository.Create(book);
+            return CreatedAtAction(nameof(GetBooks), new {id = newBook.Id}, newBook);
+
+
+        }
     }
 }
