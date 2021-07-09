@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using book_api.Models;
 
 namespace book_api
 {
@@ -26,7 +28,8 @@ namespace book_api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            //registering BookContext for dependecy injection
+            services.AddDbContext<BookContext>(o => o.UseSqlite("Data source=book.db"));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
