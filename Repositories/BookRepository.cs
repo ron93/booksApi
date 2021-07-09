@@ -35,14 +35,15 @@ namespace book_api.Repositories
             return await _context.Books.ToListAsync();
         }
 
-        public Task<Book> Get(int id)
+        public async Task<Book> Get(int id)
         {
-            throw new System.NotImplementedException();
+            return await _context.Books.FindAsync(id);
         }
 
-        public Task Update(Book book)
+        public async Task Update(Book book)
         {
-            throw new System.NotImplementedException();
+            _context.Entry(book).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
         }
     }
 }
