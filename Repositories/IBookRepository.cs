@@ -8,7 +8,7 @@ namespace book_api.Repositories
 {
     public interface IBookRepository
     {
-        Task<IEnumerable<Book>> GetBooks();
+        Task<IEnumerable<Book>> Get();
         
         Task<Book> Get(int id);
 
