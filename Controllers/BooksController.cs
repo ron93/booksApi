@@ -53,5 +53,18 @@ namespace book_api.Controllers
             await _bookRepository.Update(book);
             return NoContent();
         }
+
+        [HttpDelete]
+        public async Task<ActionResult> Delete (int id)
+        {
+            var bookToDelete = await _bookRepository.Get(id);
+            if(bookToDelete == null)
+            {
+                return NotFound();
+            }
+
+            await _bookRepository.Delete(bookToDelete.Id);
+            return NoContent();
+        }
     }
 }
