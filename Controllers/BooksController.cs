@@ -42,5 +42,16 @@ namespace book_api.Controllers
 
 
         }
+        [HttpPut]
+
+        public async Task<ActionResult> PutBooks(int id , [FromBody] Book book)
+        {
+            if(id != book.Id)
+            {
+                return BadRequest();
+            }
+            await _bookRepository.Update(book);
+            return NoContent();
+        }
     }
 }
